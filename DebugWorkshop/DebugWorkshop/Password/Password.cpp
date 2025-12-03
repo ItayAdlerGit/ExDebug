@@ -13,7 +13,7 @@ int main()
 {
 	std::cout << "Enter your password to continue:" << std::endl;
 	Password pwd;
-	std::cin >> pwd.value;
+	std::cin >> pwd.value; //Overflow the value string, for example: "AAAAAAAAAAAAAAAAAAA"
 
 	if (!strcmp(pwd.value, "********"))
 		pwd.incorrect = false;
